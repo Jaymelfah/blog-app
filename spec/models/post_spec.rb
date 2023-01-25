@@ -33,7 +33,8 @@ RSpec.describe Post, type: :model do
 
   describe 'Check methods in post' do
     before do
-      @post1 = Post.create(title: 'Hi', text: 'My world', comments_counter: 0, likes_counter: 0, user_id: 1, author_id: 1)
+      @post1 = Post.create(title: 'Hi', text: 'My world', comments_counter: 0, likes_counter: 0, user_id: 1,
+                           author_id: 1)
       6.times do
         Comment.create(post: @post1, user_id: 1, text: 'In this life')
       end

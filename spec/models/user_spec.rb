@@ -4,7 +4,7 @@ RSpec.describe User, type: :model do
   before :each do
     @user = User.new(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher', posts_counter: 1)
   end
-  
+
   it 'name must not be blank' do
     @user.name = nil
     expect(@user).to_not be_valid
@@ -22,7 +22,8 @@ RSpec.describe User, type: :model do
 
   describe 'check methods' do
     before do
-      @user1 = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher', posts_counter: 0)
+      @user1 = User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher',
+                           posts_counter: 0)
       5.times do
         Post.create(title: 'Hi', text: 'My world', likes_counter: 0, user_id: 1, author_id: 1)
       end
