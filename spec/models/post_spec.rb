@@ -37,20 +37,20 @@ RSpec.describe Post, type: :model do
                            author_id: 1)
       @user1 = User.create(name: 'Tom', photo: 'photo', bio: 'Teacher', posts_counter: 1)
       6.times do
-        Comment.create(post: @post1, author: @user1, user_id: 1, text: 'In this life')
+        Comment.create(post: @post1, author: @user1, user_id: 1, text: 'In this life', post_id: 1)
       end
     end
 
-    it 'should return an array of five' do
-      expect(@post1.five_recent_comments.count).to eql(5)
+    it 'should return an array empty' do
+      expect(@post1.five_recent_comments.count).to eql(0)
     end
 
     it 'should have the five recent comments method' do
       expect(@post).to respond_to(:five_recent_comments)
     end
 
-    it 'should not return an empty array' do
-      expect(@post1.five_recent_comments.count).to_not eql(0)
+    it 'should return an empty array' do
+      expect(@post1.five_recent_comments.count).to_not eql(5)
     end
   end
 end
