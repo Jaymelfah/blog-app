@@ -31,5 +31,7 @@
    </div>
  <% end %>
 
- <button class="pagination">Pagination</button>
+ <button class="pagination">
+   <%= link_to 'Pagination', user_post_path(@user, @posts[0]) %>
+ </button>
  </div>
