@@ -110,7 +110,6 @@ Example command:
 
 > Features to add to the project.
 
-- [ ] **[ Forms ]**
 - [ ] **[ Validations, Model specs, and n+1 problems ]**
 - [ ] **[ Add Devise ]**
 - [ ] **[ Add authorization rules ]**
