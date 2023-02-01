@@ -1,13 +1,3 @@
 <div class="main-container flex">
-<% @users.each do |user| %>
-  <div class="users-wrapper flex">
-    <div class="img-cont">
-      <%= image_tag user.photo, :size => "50x50", alt: "user photo" %>
-    </div>
-    <div class="user-details">
-      <h2><%= link_to user.name, user, class: "link-button"  %></h2>
-      <p>Number of posts: <%= user.posts_counter %></p>
-    </div>
-  </div>
-<%end%>
+ <%= render partial: 'partials/user' %>
 </div>
