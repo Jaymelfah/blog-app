@@ -1,9 +1,9 @@
-<h1>Add new comments</h1>
+<h1 class="text-blue-600 mt-36">Add new comments</h1>
 
-<%= form_with model: @comment, url: user_post_comments_path, method: :post, local: true, scope: :comment do |form| %>
-  <div>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
+<%= form_with model: @comment, url: user_post_comments_path, method: :post, local: true, scope: :comment, html: { class: "bg-blue-200 p-4 rounded" } do |form| %>
+  <div class="mb-4">
+    <%= form.label :text, class: "block text-blue-400 font-medium mb-2" %><br>
+    <%= form.text_area :text, class: "w-full border border-gray-400 p-2" %>
   </div>
-  <%= form.submit "Add Comment" %>
+  <%= form.submit "Add Comment", class: "bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" %>
 <% end %>

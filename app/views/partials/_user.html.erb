@@ -3,7 +3,7 @@
     <div class="img-cont">
       <%= image_tag user.photo, :size => "70x70", alt: "user photo" %>
     </div>
-    <div class="user-details">
+    <div class="user-details rounded-2xl">
       <h2><%= link_to user.name, user, class: "link-button"  %></h2>
       <p>Number of posts: <%= user.posts_counter %></p>
     </div>
