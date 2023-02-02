@@ -1,12 +1,15 @@
+<h1 class="text-blue-600 mt-36">Add A New Post</h1>
 <%= form_with model: @post, url: user_posts_path, method: :post, local: true, scope: :new_post do |form| %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </div>
+  <div class="bg-blue-200 p-4 rounded">
+    <div class="mb-4">
+      <%= form.label :title, class: "text-blue-800 font-bold" %><br>
+      <%= form.text_field :title, class: "bg-white border border-blue-400 p-2 rounded" %>
+    </div>
 
-  <div>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
+    <div class="mb-4">
+      <%= form.label :text, class: "text-blue-800 font-bold" %><br>
+      <%= form.text_area :text, rows: 9, class: "bg-white border border-blue-400 p-2 rounded" %>
+    </div>
+    <%= form.submit "Click to Add Post", class: "bg-blue-500 text-white p-2 rounded hover:bg-blue-600" %>
   </div>
-  <%= form.submit "Click to Add Post"%>
 <% end %>
