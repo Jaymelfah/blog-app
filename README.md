@@ -101,6 +101,11 @@ Example command:
 - GitHub: [GitHub](https://github.com/Jaymelfah)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jeremiah-ekow-melfah-a4402a161/)
 
+👤 **Olivier Kango**
+
+- GitHub: [GitHub](https://github.com/Olivier-Kango)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivier-kango-b990601b8)
+
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -110,7 +115,6 @@ Example command:
 
 > Features to add to the project.
 
-- [ ] **[ Validations, Model specs, and n+1 problems ]**
 - [ ] **[ Add Devise ]**
 - [ ] **[ Add authorization rules ]**
 - [ ] **[ Integration specs for Views ]**
