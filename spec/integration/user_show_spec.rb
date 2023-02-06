@@ -16,4 +16,33 @@ RSpec.describe 'User Page Index', type: :feature do
   it 'shows the username' do
     expect(page).to have_content(@tom.name)
   end
+
+  it 'shows number of posts written by user' do
+    expect(page).to have_content("Number of posts: #{@tom.posts_counter}")
+  end
+
+  it 'shows users bio' do
+    expect(page).to have_content('Teacher')
+  end
+
+  it 'shows last three posts of user' do
+    expect(page).to have_content(@post1.title)
+    expect(page).to have_content(@post2.title)
+    expect(page).to have_content(@post3.title)
+  end
+
+  it 'shows button for seeing all posts' do
+    expect(page).to have_link('See all posts')
+  end
+
+  it 'redirects to post show page upon click' do
+    click_on 'Hello'
+    expect(page).to have_current_path user_post_path(@tom.id, @post1.id)
+  end
+
+  it 'redirects to user posts index page on click of see all post button' do
+    click_link('See all posts')
+    expect(page).to have_current_path user_posts_path(@tom.id)
+  end
+
 end
