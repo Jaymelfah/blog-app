@@ -1,7 +1,11 @@
  <div class="main-container flex">
  <div class="users-wrapper flex">
     <div class="img-cont">
-      <%= image_tag @user.photo, :size => "80x80", alt: "user photo" %>
+    <% if @user.photo.present? %>
+      <%= image_tag @user.photo, size: "80x80", alt: "user photo" %>
+    <% else %>
+      <%= image_tag "planet.png", size: "70x70", alt: "user photo" %>
+    <% end %>
     </div>
     <div class="user-details">
       <h2><%= @user.name %></h2>

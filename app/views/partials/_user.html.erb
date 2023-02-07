@@ -1,7 +1,11 @@
  <% @users.each do |user| %>
  <div class="users-wrapper flex">
     <div class="img-cont">
-      <%= image_tag user.photo, :size => "70x70", alt: "user photo" %>
+    <% if user.photo.present? %>
+    <%= image_tag user.photo, size: "70x70", alt: "user photo" %>
+    <% else %>
+    <%= image_tag "planet.png", size: "70x70", alt: "user photo" %>
+    <% end %>
     </div>
     <div class="user-details rounded-2xl">
       <h2><%= link_to user.name, user, class: "link-button"  %></h2>

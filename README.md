@@ -76,19 +76,15 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-```sh
-  gem install
-```
+- After cloning type 'cd blog-app'.
+- Run 'bundle install' to install all the required dependencies.
 
 ### Usage
 
 To run the project, execute the following command:
-
-Example command:
-
-```sh
-  rails s
-```
+- Run 'rails db:create' to create a new database
+- Run 'rails db:migrate' to migrate the db and build the schema
+- Run 'rails s' to start the dev server
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -114,12 +110,8 @@ Example command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Features to add to the project.
-
-- [ ] **[ Add Devise ]**
 - [ ] **[ Add authorization rules ]**
 - [ ] **[ Integration specs for Views ]**
-
-
 
 
 
