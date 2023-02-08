@@ -14,4 +14,7 @@
   <% end %>
   <% end %>
 </div>
+<button class="mt-6">
+  <%= link_to "Comment on post", new_user_post_comment_path(@user.id, @post.id), class: "link-button" %>
+</button>
 </div>
