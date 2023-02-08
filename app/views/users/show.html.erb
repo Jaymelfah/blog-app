@@ -32,9 +32,13 @@
      <% end %>
      <% end %>
     <% end %>
-
+    <div class="flex mt-6 justify-center">
     <button>
       <%= link_to "See all posts", user_posts_path(@user), class: "link-button" %>
     </button>
+    <button>
+      <%= link_to "Add a new post", new_user_post_path(@user), class: "link-button" %>
+    </button>
+    </div>
  <div>
  </div>
