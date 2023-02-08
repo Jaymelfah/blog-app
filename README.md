@@ -110,8 +110,8 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Features to add to the project.
-- [ ] **[ Add authorization rules ]**
-- [ ] **[ Integration specs for Views ]**
+- [ ] **[ Add Api End points ]**
+
 
 
 
