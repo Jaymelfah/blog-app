@@ -7,6 +7,18 @@ Rails.application.routes.draw do
       resources :likes, only: [:create]
     end
   end
+
+  # Apis
+  namespace :api do
+    namespace :v1 do
+      resources :users do
+        resources :posts, format: :json do
+          resources :comments, format: :json
+        end
+      end
+    end
+  end
+
   # Defines the root path route ("/")
    root 'users#index'
 end
