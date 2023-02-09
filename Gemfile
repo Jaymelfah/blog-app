@@ -50,6 +50,10 @@ gem 'devise'
 # authorisation
 gem 'cancancan'
 
+gem 'bcrypt', '~> 3.1', '>= 3.1.18'
+
+# api authentication
+gem 'jwt'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
