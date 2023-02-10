@@ -48,6 +48,16 @@
 ### ERD Diagram <a name="diagram">
 ![Preview](./app/assets/images/blog_app_erd.png)
 
+<!-- Features -->
+
+### Key Features <a id="key-features"></a>
+
+- **User Sign_up and Sing_in**
+- **User can Comment and Like**
+- **User can Delete Comment**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
@@ -111,8 +121,6 @@ To run the project, execute the following command:
 
 > Features to add to the project.
 - [ ] **[ Add Api End points ]**
-
-
 
 
 <!-- CONTRIBUTING -->
